@@ -1,4 +1,4 @@
-TAGS="0.3.3.8 latest"
+TAGS="0.3.3.9 latest"
 DOCKER_REPO="sirboops/tor"
 
 BUILD_TAGS=""
