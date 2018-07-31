@@ -1,0 +1,9 @@
+pipeline:
+    docker:
+        image: plugins/docker
+        dockerfile: Dockerfile
+        repo: sirboops/tor
+        tags: [0.3.3.9, latest]
+        experimental: true
+        squash: true
+        secrets: [ docker_username, docker_password ]
