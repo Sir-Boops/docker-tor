@@ -12,7 +12,7 @@ RUN apk add -U --virtual deps \
         linux-headers xz-dev \
         zstd-dev libcap-dev && \
     apk add libevent libssl1.0 \
-        xz zstd libcap && \
+        xz zstd zstd-libs libcap && \
     cd ~ && \
     wget https://www.torproject.org/dist/tor-$TOR_VER.tar.gz && \
     tar xf tor-$TOR_VER.tar.gz && \
