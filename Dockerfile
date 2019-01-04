@@ -3,8 +3,7 @@ FROM alpine:3.8
 ENV TOR_VER="0.3.4.9"
 
 RUN addgroup tor && \
-    adduser -D -h /opt -G tor tor && \
-    echo "tor:`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 24 | mkpasswd -m sha256`" | chpasswd
+    adduser -D -S -u 1000 -h /opt -G tor tor
 
 RUN apk add -U --virtual deps \
         gcc g++ make libevent-dev \
