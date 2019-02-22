@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-ENV TOR_VER="0.3.5.7"
+ENV TOR_VER="0.3.5.8"
 
 RUN addgroup tor && \
     adduser -D -S -u 1000 -h /opt -G tor tor
